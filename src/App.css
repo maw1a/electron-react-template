@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.windowtitle {
+  padding: 10px;
+  height: auto;
+  display: inline-block;
+  font-family: montserrat;
+}
+
+.windowcontrols {
+  float: right;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-right: 0px;
+  width: 100px;
+}
+
+.windowcontrols button {
+  outline: 0;
+  border: 0;
+  padding: 5px;
+  background: none;
+}
+
+.titlebarstyle {
+  background-color: #022327;
+  color: #fff;
+  font-size: 10pt;
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+
+.windowcontrolsstyle {
+  -webkit-app-region: no-drag;
+}
+
+.windowcontrolsstyle button {
+  color: #fff;
+  weight: bold;
+}
+
+.windowcontrolsstyle button:hover {
+  background: #48494c;
+}
+
+.searchbarstyle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 18fr 1fr;
+  margin-right: 0px;
+  width: 100%;
+  background-color: black;
+}
+
+.searchbarstyle button {
+  outline: 0;
+  border: 0;
+  padding: 5px;
+  background: none;
+  color: white;
+}
+
+.searchbarstyle button:hover {
+  background: #48494c;
+}
+
+.search {
+  padding: 5px;
+}
+
+.search input {
+  width: 100%;
+  font-size: large;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  padding: 5px 15px 5px 15px;
+}
